@@ -1,0 +1,9 @@
+fruits =["õun", "pirn","ploom"]
+
+
+
+
+
+
+
+
