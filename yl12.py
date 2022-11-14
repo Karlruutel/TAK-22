@@ -7,7 +7,3 @@ print(fruits[0])
 print(fruits[2])
 if "õun" in fruits:
     print("Jah, õun on listis")
-
-
-
-
