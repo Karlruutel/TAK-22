@@ -11,5 +11,16 @@ print(me["place_of_living"])
 
 me["dessert"] = "ice cream"
 
-for key in me:
-    print(me[key])
+for k, v in me.items():
+    print(k, v)
+
+#me["personal_code"] = "3295738104"
+
+me.pop("birth_year")
+
+print(len(me))
+
+if "personal_code" in me:
+    print("Isikukood on olemas")
+else:
+    print("Isikukood ei ole olemas")
