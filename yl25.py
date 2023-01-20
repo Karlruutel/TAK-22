@@ -10,6 +10,7 @@ print(me.get("place_of_living"))
 print(me["place_of_living"])
 
 me["dessert"] = "ice cream"
+me["height"] = "189 cm"
 
 for k, v in me.items():
     print(k, v)
