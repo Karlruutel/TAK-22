@@ -1,28 +1,28 @@
 import random
 
-choices = ["kivi", "paber", "käärid"]
-
 while True:
+    valikud = ["kivi", "paper", "käärid"]
+    arvuti = random.choice(valikud)
+    mina = input("Sisesta oma valik (kivi, paper, käärid): ")
 
-    print("0) ei soovi rohkem mängida")
-    print("1) kivi")
-    print("2) paber")
-    print("3) käärid")
-    user_choice = int(input("Tee valik "))
-
-    if user_choice == 0:
+    if mina == arvuti:
+        print("Viik!")
+    elif mina == "kivi":
+        if arvuti == "käärid":
+            print("Sa võitsid!")
+        else:
+            print("Sa kaotasid!")
+    elif mina == "paper":
+        if arvuti == "kivi":
+            print("Sa võitsid!")
+        else:
+            print("Sa kaotasid!")
+    elif mina == "käärid":
+        if arvuti == "paper":
+            print("Sa võitsid!")
+        else:
+            print("Sa kaotasid!")
+    
+    uuesti = input("Mängime uuesti? (y/n): ")
+    if uuesti == "n":
         break
-
-    computer_choice = random.randint(1, 3)
-
-print("sinu valik oli", choice[user_choice-1])
-print("Arvuti valik oli", choice[computer_choice-1])
-
-if user_choice == computer_choice:
-    print("Mäng jäi viiki")
-elif user_choice == 1 and computer_choice ==3 or user_choice == 2 and computer_choice == 1 or  user_choice == 3 and computer_choice == 2:
-    print("sinu võit")
-else:
-    print("Arvuti võit")
-
-print()
